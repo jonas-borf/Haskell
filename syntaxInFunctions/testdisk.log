@@ -1,0 +1,161 @@
+
+
+Tue Sep  9 17:45:29 2025
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.12.25-amd64 (#1 SMP PREEMPT_DYNAMIC Kali 6.12.25-1kali1 (2025-04-30)) x86_64
+Compiler: GCC 14.2
+ext2fs lib: 1.47.2, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.5
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/mapper/kali--vg-root - 94 GB / 88 GiB - 185303040 sectors, sector size=512
+Disk /dev/mapper/kali--vg-swap_1 - 5117 MB / 4880 MiB - 9994240 sectors, sector size=512
+Disk /dev/mapper/nvme0n1p3_crypt - 104 GB / 97 GiB - 204767232 sectors, sector size=512
+Disk /dev/dm-0 - 104 GB / 97 GiB - 204767232 sectors, sector size=512
+Disk /dev/dm-1 - 94 GB / 88 GiB - 185303040 sectors, sector size=512
+Disk /dev/dm-2 - 5117 MB / 4880 MiB - 9994240 sectors, sector size=512
+Disk /dev/nvme0n1 - 256 GB / 238 GiB - CHS 244198 64 32, sector size=512 - WDC PC SN730 SDBPNTY-256G-1006, S/N:20524M803710
+
+Partition table type (auto): None
+Disk /dev/mapper/kali--vg-root - 94 GB / 88 GiB
+Partition table type: None
+
+Interface Advanced
+
+recover_EXT2: s_block_group_nr=0/706, s_mnt_count=23/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Last mount time:    Wed Sep  3 04:57:26 2025
+   P ext4                           0  185303039  185303040
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 94 GB / 88 GiB
+search_superblock
+
+recover_EXT2: s_block_group_nr=0/706, s_mnt_count=23/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Last mount time:    Wed Sep  3 04:57:26 2025
+Ext2 superblock found at sector 2 (block=0, blocksize=4096)
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 262144 (block=32768, blocksize=4096)
+
+block_group_nr 3
+
+recover_EXT2: "e2fsck -b 98304 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=3/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 786432 (block=98304, blocksize=4096)
+
+block_group_nr 5
+
+recover_EXT2: "e2fsck -b 163840 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=5/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 1310720 (block=163840, blocksize=4096)
+
+block_group_nr 7
+
+recover_EXT2: "e2fsck -b 229376 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=7/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 1835008 (block=229376, blocksize=4096)
+
+block_group_nr 9
+
+recover_EXT2: "e2fsck -b 294912 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=9/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 2359296 (block=294912, blocksize=4096)
+
+block_group_nr 25
+
+recover_EXT2: "e2fsck -b 819200 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=25/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 6553600 (block=819200, blocksize=4096)
+
+block_group_nr 27
+
+recover_EXT2: "e2fsck -b 884736 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=27/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 7077888 (block=884736, blocksize=4096)
+
+block_group_nr 49
+
+recover_EXT2: "e2fsck -b 1605632 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=49/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 12845056 (block=1605632, blocksize=4096)
+
+block_group_nr 81
+
+recover_EXT2: "e2fsck -b 2654208 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=81/706, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Ext2 superblock found at sector 21233664 (block=2654208, blocksize=4096)
+  ext4                           0  185303039  185303040
+superblock 0, blocksize=4096 []
+superblock 32768, blocksize=4096 []
+superblock 98304, blocksize=4096 []
+superblock 163840, blocksize=4096 []
+superblock 229376, blocksize=4096 []
+superblock 294912, blocksize=4096 []
+superblock 819200, blocksize=4096 []
+superblock 884736, blocksize=4096 []
+superblock 1605632, blocksize=4096 []
+superblock 2654208, blocksize=4096 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+
+Interface Advanced
+
+recover_EXT2: s_block_group_nr=0/706, s_mnt_count=23/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 23162880
+recover_EXT2: part_size 185303040
+Filesystem created: Mon Aug 18 03:45:36 2025
+Last mount time:    Wed Sep  3 04:57:26 2025
+   P ext4                           0  185303039  185303040
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 94 GB / 88 GiB
+SIGINT detected! PhotoRec has been killed.
+SIGINT detected! PhotoRec has been killed.
