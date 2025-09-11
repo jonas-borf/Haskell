@@ -1,0 +1,3 @@
+--When trying to think of a way to recursively solve
+-- a problem, first think of when the recursion doesn't apply
+--to get your edge case. Then figure out the recursive part ig idk
