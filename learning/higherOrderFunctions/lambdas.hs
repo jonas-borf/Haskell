@@ -36,5 +36,3 @@ numLongChains = length (filter' (\xs -> length xs > 15) (map' chain [1..100]))
 
 addThree :: (Num a) => a -> a -> a -> a
 addThree = \x -> \y -> \z -> x + y + z
-
---test
