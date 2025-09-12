@@ -1,0 +1,3 @@
+https://learnyouahaskell.com/modules#:~:text=this%20handy%20reference
+
+http://haskell.org/hoogle
