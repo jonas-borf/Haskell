@@ -1,10 +1,7 @@
 import System.IO
+import Data.Char
 
 main = do
-  handle <- openFile "girlfriend.txt" ReadMode
-  contents <- hGetContents handle
-  putStr contents
-  hClose handle
+    contents <- readFile "girlfriend.txt"
+    writeFile "girlfriendCaps.txt" (map toUpper contents)
 
---type FilePath = String
---data IOMode = ReadMode | WriteMode | AppendMode | ReadWriteMode
