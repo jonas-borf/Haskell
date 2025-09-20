@@ -1,6 +1,10 @@
-main = interact respondPalindromes
---This is a possible solution, but much more difficult to read.
+import System.IO
 
-respondPalindromes = unlines . map (\xs -> if isPalindrome xs then "palindrome" else "not a palindrome") . lines
-  where
-    isPalindrome xs = xs == reverse xs
+main = do
+  handle <- openFile "girlfriend.txt" ReadMode
+  contents <- hGetContents handle
+  putStr contents
+  hClose handle
+
+--type FilePath = String
+--data IOMode = ReadMode | WriteMode | AppendMode | ReadWriteMode
