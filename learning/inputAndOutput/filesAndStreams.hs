@@ -1,7 +1,8 @@
 import System.IO
-import Data.Char
 
 main = do
-    contents <- readFile "girlfriend.txt"
-    writeFile "girlfriendCaps.txt" (map toUpper contents)
-
+  withFile "something.txt" ReadMode (\handle -> do
+        hSetBuffering handle $ BlockBuffering (Just 2048)
+        contents <- hGetContents handle
+        putStr contents
+    )
