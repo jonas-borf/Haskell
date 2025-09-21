@@ -1,26 +1,18 @@
 import System.Random
+import Control.Monad (when)
 
 main = do
     gen <- getStdGen
-    let randomChars = randomRs ('a', 'z') gen
-        (first20, rest) = splitAt 20 randomChars
-        (second20, _) = splitAt 20 rest
-    putStrLn first20
-    putStr second20
-    
-threeCoins :: StdGen -> (Bool, Bool, Bool)
-threeCoins gen =
-    let (firstCoin, newGen) = random gen
-        (secondCoin, newGen') = random newGen
-        (thirdCoin, newGen'') = random newGen'
-    in (firstCoin, secondCoin, thirdCoin)
+    askForNumber gen
 
-randoms' :: (RandomGen g, Random a) => g -> [a]
-randoms' gen = let (value, newGen) = random gen in value:randoms' newGen
-
-finiteRandoms :: (RandomGen g, Random a, Integral n) => n -> g -> ([a], g)
-finiteRandoms 0 gen = ([], gen)
-finiteRandoms n gen =
-    let (value, newGen) = random gen
-        (restOfList, finalGen) = finiteRandoms (n-1) newGen
-    in (value:restOfList, finalGen)
+askForNumber :: StdGen -> IO ()
+askForNumber gen = do
+    let (randNumber, newGen) = randomR (1,10) gen :: (Int, StdGen)
+    putStr "Which number in the range from 1 to 10 am I thinking of? "
+    numberString <- getLine
+    when (not $ null numberString) $ do
+        let number = read numberString
+        if randNumber == number
+            then putStrLn "You are correct!"
+            else putStrLn $ "Sorry, it was " ++ show randNumber
+        askForNumber newGen 

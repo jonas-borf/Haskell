@@ -74,3 +74,6 @@ main = do
         return color) [1..4] 
     putStrLn "The colors that you associarte with 1, 2, 3, and 4 are: "
     forM colors putStrLn
+
+--note that forM is just flip mapM.
+--probably only usefuly when you only want to import monad and not map
