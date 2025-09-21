@@ -2,7 +2,11 @@ import System.Random
 
 main = do
     gen <- getStdGen
-    putStr $ take 20 (randomRs ('a', 'z') gen)
+    let randomChars = randomRs ('a', 'z') gen
+        (first20, rest) = splitAt 20 randomChars
+        (second20, _) = splitAt 20 rest
+    putStrLn first20
+    putStr second20
     
 threeCoins :: StdGen -> (Bool, Bool, Bool)
 threeCoins gen =
