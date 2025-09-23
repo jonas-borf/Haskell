@@ -22,7 +22,7 @@ handleDerivativeChoice choice
 
 handlePolynomialInput :: IO ()
 handlePolynomialInput = do
-  putStrLn "Input as a tuple your coefficients and then the value at which the derivative should be evaluated. \n e.g. x^2+2x+3 at x=4 -> ([3,2,1], 4)"
+  putStrLn "Input as a tuple your coefficients and then the value at which the derivative should be evaluated. \n e.g. x^2+2x+3 at x=4 -> ([1,2,3], 4)"
   input <- getLine
   derivative Poly (read input)
 
